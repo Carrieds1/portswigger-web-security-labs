@@ -1,0 +1,17 @@
+# PortSwigger Web Security Labs Writeups
+
+This repository contains my structured writeups while completing the PortSwigger Web Security Academy.
+
+## Focus Areas
+- Exploitation methodology
+- Root cause analysis
+- Secure design and mitigation
+
+## Approach
+Each lab is documented with:
+- Vulnerability explanation
+- Exploitation steps
+- Impact analysis
+- Mitigation strategies
+
+All activities were performed in authorised lab environments.
