@@ -14,26 +14,24 @@ This repository contains structured writeups from completing the **PortSwigger W
 
 ## Topics
 
-_(The repository structure reflects full coverage of PortSwigger topics, with additional writeups added as they are completed.)_
+### Access Control
 
-### SQL Injection
-
-- [Data Exfiltration](sqli/data-exfiltration/)
-- [Login Bypass](sqli/login-bypass/)
+- [Horizontal Privilege Escalation](access-control/horizontal-privilege-escalation/)
+- [Horizontal -> Vertical Privilege Escalation](access-control/horizontal-to-vertical-privilege-escalation/)
 
 ---
 
-### Server-Side Request Forgery (SSRF)
+### Authentication
 
-- [Localhost Access](ssrf/localhost-access/)
-- [IP Enumeration](ssrf/ip-enumeration/)
+- [Bypassing 2FA](authentication/bypass-2fa/)
+- [Username & Password Enumeration](authentication/username-password-enumeration/)
 
 ---
 
 ### File Upload
 
-- [RCE - Unrestricted File Type](file-upload/rce-unrestricted-file-type/)
 - [RCE - Content-Type Bypass](file-upload/rce-content-type-bypass/)
+- [RCE - Unrestricted File Type](file-upload/rce-unrestricted-file-type/)
 
 ---
 
@@ -49,17 +47,17 @@ _(The repository structure reflects full coverage of PortSwigger topics, with ad
 
 ---
 
-### Authentication
+### Server-Side Request Forgery (SSRF)
 
-- [Username & Password Enumeration](authentication/username-password-enumeration/)
-- [Bypassing 2FA](authentication/bypass-2fa/)
+- [Localhost Access](ssrf/localhost-access/)
+- [IP Enumeration](ssrf/ip-enumeration/)
 
 ---
 
-### Access Control
+### SQL Injection
 
-- [Horizontal Privilege Escalation](access-control/horizontal-privilege-escalation/)
-- [Horizontal → Vertical Privilege Escalation](access-control/horizontal-to-vertical-privilege-escalation/)
+- [Data Exfiltration](sqli/data-exfiltration/)
+- [Login Bypass](sqli/login-bypass/)
 
 ---
 
