@@ -1,4 +1,4 @@
-# 2FA Bypass
+# Authentication - 2FA Bypass
 
 ## 🔹 Overview
 

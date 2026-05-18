@@ -1,4 +1,4 @@
-# Username Enumeration via Different Responses
+# Authentication - Username/Password Enumeration
 
 ## 🔹 Overview
 

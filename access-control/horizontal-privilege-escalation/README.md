@@ -1,4 +1,4 @@
-# User ID Controlled by Request Parameter (IDOR)
+# Access Control - Horizontal Privelege Escelation (IDOR)
 
 ## 🔹 Overview
 

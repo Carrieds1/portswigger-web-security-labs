@@ -1,4 +1,4 @@
-# Lab: File Upload → RCE via Content‑Type Bypass
+# File Upload - RCE via Content‑Type Bypass
 
 ## 🔹 Overview
 

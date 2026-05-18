@@ -1,4 +1,4 @@
-# SQL Injection → Data Exfiltration via WHERE Clause
+# SQL Injection - Data Exfiltration
 
 ## 🔹 Overview
 
@@ -18,7 +18,7 @@ https://0a5800b004d6892484c669af008d0047.web-security-academy.net/
 
 Home page:
 
-![Home env](/images/lab-env.png)
+![Home env](images/lab-env.png)
 
 ## 🔹 Vulnerability
 
@@ -36,7 +36,7 @@ This suggests that user input is used directly in a SQL query.
 
 Selecting a `Gifts` returns only visible, released products
 
-![Gifts](/images/gifts.png)
+![Gifts](images/gifts.png)
 
 But this also gave us an injection point
 
@@ -65,7 +65,7 @@ Explanation:
 
 Adding a `'` to the injection point returned
 
-![Error](/images/error.png)
+![Error](images/error.png)
 
 This indicates that the input is likely being interpreted as part of a SQL query, and that improper escaping of user input is occurring.
 
@@ -104,7 +104,7 @@ Result:
 - All products returned
 - Hidden and unreleased items exposed
 
-![Success](/images/success.png)
+![Success](images/success.png)
 
 ## 🔹 Impact
 
@@ -140,6 +140,8 @@ Ensure input is treated as data:
 query = "SELECT * FROM products WHERE category = ?"
 cursor.execute(query, (user_input,))
 ```
+
+This uses a parameterised query, where the `?` placeholder is safely replaced with user input. This ensures the input is treated as data rather than executable SQL, preventing injection attacks.
 
 ### Avoid string concatenation
 

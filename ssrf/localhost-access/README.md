@@ -1,4 +1,4 @@
-# Basic SSRF against the Local Server
+# SSRF - Localhost Access
 
 ## 🔹 Overview
 

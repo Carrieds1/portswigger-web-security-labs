@@ -1,4 +1,4 @@
-# Remote code execution via web shell upload
+# File upload - RCE Unrestricted file type
 
 ## 🔹 Overview
 

@@ -1,4 +1,4 @@
-# Basic SSRF against Another Back-end System
+# SSRF via IP enumeration
 
 ## 🔹 Overview
 

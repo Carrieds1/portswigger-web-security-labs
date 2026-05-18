@@ -1,4 +1,4 @@
-# User ID Controlled by Request Parameter with Password Disclosure
+# Access Control - Horizontal to Vertical Privelege Escelation
 
 ## 🔹 Overview
 

@@ -1,4 +1,4 @@
-# Lab: SQL Injection → Login Bypass
+# SQL Injection - Login Bypass
 
 ## 🔹 Overview
 
@@ -45,7 +45,7 @@ AND password = '<input>';
 
 Adding a `'` in the `username` field with an arbitrary password triggered an error:
 
-![Error](/images/error.png)
+![Error](images/error.png)
 
 This indicates that the input is likely being interpreted as part of a SQL query, and that improper escaping of user input is occurring.
 
@@ -55,7 +55,7 @@ This indicates that the input is likely being interpreted as part of a SQL query
 
 The username field was modified:
 
-```http
+```
 username=administrator'--
 password=anything
 ```
@@ -77,7 +77,7 @@ Result:
 - Password check is bypassed
 - Authentication succeeds as administrator
 
-![Success](/images/success.png)
+![Success](images/success.png)
 
 This removes the password condition from the query entirely, effectively bypassing authentication.
 
@@ -144,6 +144,6 @@ It is worth noting that the application implements a good defensive measure by u
 Invalid username or password.
 ```
 
-![Good Security](/images/good-security.png)
+![Good Security](images/good-security.png)
 
 This prevents attackers from distinguishing whether the username or password was incorrect, reducing the risk of username enumeration.

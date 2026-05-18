@@ -12,27 +12,64 @@ This repository contains structured writeups from completing the **PortSwigger W
 
 ---
 
-## Modules
+## Topics
 
-### Server-Side Vulnerabilities
+_(The repository structure reflects full coverage of PortSwigger topics, with additional writeups added as they are completed.)_
 
-- [Path Traversal](server-side-vulnerabilities/path-traversal/)
-- [Path Traversal](server-side-vulnerabilities/path-traversal/)
-- [Access Control - Horizontal Privilege Escalation](server-side-vulnerabilities/access-control/horizontal-privilege-escalation/)
-- [Access Control - Horizontal → Vertical Privilege Escalation](server-side-vulnerabilities/access-control/horizontal-to-vertical-privilege-escalation/)
-- [Authentication - Username & Password Enumeration](server-side-vulnerabilities/authentication/username-password-enumeration/)
-- [Authentication - Bypassing 2FA](server-side-vulnerabilities/authentication/bypass-2fa/)
-- [SSRF - Basic](server-side-vulnerabilities/ssrf/basic/)
-- [SSRF - IP Enumeration](server-side-vulnerabilities/ssrf/ip-enumeration/)
-- [File Upload / RCE - Unrestricted File Type](server-side-vulnerabilities/file-upload/rce-unrestricted-file-type/)
-- [File Upload / RCE - Content-Type Bypass](server-side-vulnerabilities/file-upload/rce-content-type-bypass/)
-- [OS Command Injection](server-side-vulnerabilities/os-command-injection/basic/)
-- [SQL Injection - Data Exfiltration](server-side-vulnerabilities/sqli/data-exfiltration/)
-- [SQL Injection - Login Bypass](server-side-vulnerabilities/sqli/login-bypass/)
+### SQL Injection
+
+- [Data Exfiltration](sqli/data-exfiltration/)
+- [Login Bypass](sqli/login-bypass/)
+
+---
+
+### Server-Side Request Forgery (SSRF)
+
+- [Localhost Access](ssrf/localhost-access/)
+- [IP Enumeration](ssrf/ip-enumeration/)
+
+---
+
+### File Upload
+
+- [RCE - Unrestricted File Type](file-upload/rce-unrestricted-file-type/)
+- [RCE - Content-Type Bypass](file-upload/rce-content-type-bypass/)
+
+---
+
+### OS Command Injection
+
+- [Command Execution](os-command-injection/command-execution/)
+
+---
+
+### Path Traversal
+
+- [Arbitrary File Read](path-traversal/arbitrary-file-read/)
+
+---
+
+### Authentication
+
+- [Username & Password Enumeration](authentication/username-password-enumeration/)
+- [Bypassing 2FA](authentication/bypass-2fa/)
+
+---
+
+### Access Control
+
+- [Horizontal Privilege Escalation](access-control/horizontal-privilege-escalation/)
+- [Horizontal → Vertical Privilege Escalation](access-control/horizontal-to-vertical-privilege-escalation/)
 
 ---
 
 ## Approach
+
+This repository emphasises depth over repetition.
+
+Core concepts are explained thoroughly when first encountered. Subsequent labs build on these foundations rather than repeating basic explanations, allowing writeups to remain concise and focused on exploitation logic, root cause, and impact.
+
+This reflects real-world security work, where understanding patterns and behaviours is more valuable than repeating definitions.
 
 Each lab writeup follows a consistent structure:
 
@@ -45,17 +82,16 @@ Each lab writeup follows a consistent structure:
 
 Additional elements included where relevant:
 
-- **Post-exploitation exploration** (testing alternative payloads and behaviours)
+- **Post-exploitation exploration**
 - **Observations of implemented security controls**
 
 ---
 
 ## Key Skills Demonstrated
 
-- Injection attacks (SQLi, OS command injection)
-- Authentication and access control flaws
-- Server-side vulnerabilities (SSRF, file upload -> RCE)
-- Input validation and secure coding principles
+- Exploitation of common web vulnerabilities
+- Root cause analysis and vulnerability reasoning
+- Understanding of secure coding principles and vulnerability mitigation approaches
 
 ---
 
